@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style.css">
+    <title>Magitech - Team 7658</title>
+</head>
+<body>
+    <div class="header"></div>
+        <div class="page center">
+            <div id="content">
+                <!--THE LIST -->
+                    
+                <div id="list post">                    
+                    <ul>
+                        <!-- <li>
+                            <a href="https://winters-brown.github.io">
+                                <span class="notification"><span>[!!]</span><span>BACK AT IT AGAIN</span></span>
+                            </a>
+                        </li> -->
+                 
+                        <li>
+                            <h1 class="title"> <a class="title" href="../index.html">HOME / 07.01.2019</a> <br> SUMMER MEETING 2 | GETTING STARTED WITH ARDUINO </h1>
+                            <iframe class="center" src="https://www.youtube.com/embed/2ADtqaiP0ig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="description">Today we will begin to program the arduino using the arduino IDE. If you haven't already installed the IDE you can find out how to <a href="arduino_install.html">here</a></p>
+                            <p>Open the arduino IDE, once you've done that you want to plug in your arduino to the computer. Then go to tools port and select the COM your arduino is connected to.</p>
+                            <p>After selecting your arduino lets load a example to make sure the arduino uploads and compiles properly this is where most arduino's fail.</p>
+                            <p>In order to test the arduino we want to select file / examples / basics / blink. Select upload and wait for it to finish compiling</p>
+                            <p>If everything went well and you got no errors you should be able to see some onboard led on the arduino blinking on and off repeatedly every second or so. If so then congratulations! You did it. This is your first program for the arduino. The classic hello world of the hardware / electronics world.</p>
+                            <p>So far everything up until right now has been successful! And thats good. But I don't want to use their premade program. I want to write my own. So lets get started making our own. To Start wire your bread board so that your leds positive leg is connected to pin 12 and the negative leg connected to GND on the arduino. Got that? I hope so. That is probably the hardest part.</p>
+                            <p><i>Now that all the hard stuff is done lets get started programming. I do a great job explaining it in the video but if you would like to read a summarized version of my speech here then go on and continue.</i></p>
+                            
+                            <h3>Code</h3>
+                            <hr>
+                            <p>Lets begin with a brand new file. This file we will save as <code>blink_tutorial.ino</code> inside that file we will do lots of things. Ill just lay some code down below to begin with.</p>
+                            <script src="https://gist.github.com/winters-brown/1e53e9a9ada293f4245967fa585a7b02.js"></script>
+                            <p>To briefly describe the code above well cover all the good stuff. We start with initializing a INT (integer) variable and assigning it a value of 12. We use this to address the pin that our LED is on. If you connected your led to another pin then you should change it now.</p>
+                            <p>In line 4 we assign our pin LED as a output so that we are pushing voltage, pushing current out wards. Not receiving.</p>
+                            <p>Line 8 and 10 we assigned a HIGH (on) or LOW (off) value to our pin, essentially applying a voltage of 3.3v or 0.0v across the pins</p>
+                            <p>The delays hold the cpu from processing anything until one second has passed or 1000 ms has passed. We do this because the cpu its self would turn the led on and off repeatedly over and over so fast that the eye couldnt see. So we put the delay there to make it visible to the human eye.</p>
+                            
+                            <h3>Homework</h3>
+                            <hr>
+                            <p>Now that you know how to control an led I want you to make a program that displays your name in morse code over and over. Once its done showing your name it should delay 3 seconds before repeating the program.</p>
+                            <img src="https://media.daysoftheyear.com/20171223114045/learn-your-name-in-morse-code-day-1.jpg" alt="Morse Code Code Image">
+                            <h4>Extra Credit</h4>
+                            <p>Use the power of <i>functions</i> to make your life easier. I suggest making a short and long function and then utilizing that function in other functions that simulate the letters short or long codes.</p>
+                        </li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+    </div>
+</body>
+</html>
